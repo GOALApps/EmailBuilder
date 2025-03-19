@@ -234,7 +234,7 @@
                 <button id="SendAllToFlowButton" class="CustomButton">Generate All Emails In Drafts</button>
                 <br>
                 <div id="SendToFlowButtonMessage"></div>
-                <button id="StopGeneratingButton" class="CustomButton">Stop Generating</button>
+                <button id="StopGeneratingButton" class="CustomButton" style="display:none;">Stop Generating</button>
                 <div id="EmailsGenerated"></div>
 
 
@@ -379,6 +379,7 @@
                         $('#html-output-hidden').html($("#html-output").val());
                         $('#SendToFlowButtonMessage').html('Generating Test Email');
                         $("#EmailsGenerated").html("");
+                        $("#StopGeneratingButton").attr("style", "display: inline;");  
                     });
   
                     $('#SendAllToFlowButton').on('click', function() {
@@ -386,6 +387,7 @@
                         $('#html-output-hidden').html($("#html-output").val());
                         $('#SendToFlowButtonMessage').html('Sending to flow');
                         $("#EmailsGenerated").html("");
+                        $("#StopGeneratingButton").attr("style", "display: inline;");                        
                     });
 
                     $('#StopGeneratingButton').on('click', function() {
