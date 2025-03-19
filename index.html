@@ -97,6 +97,10 @@
                   font-style: italic;
                   color: green;
                 }
+                #SendToFlowButtonMessage {
+                    display: inline;
+                }
+                
 
                 #EmailsGenerated {
                     margin-bottom: 5px;
@@ -122,7 +126,7 @@
                     display: inline-block;
                 }
 
-                .add-btn, .delete-btn {
+                .add-btn, .delete-btn, #StopGeneratingButton {
                   border: none;
                   background-color: white;
                   color: orange;
@@ -235,9 +239,9 @@
                 <br>
                 <div id="SendToFlowButtonMessage"></div>
                 <button id="StopGeneratingButton" class="CustomButton" style="display:none;">Stop Generating</button>
+                <br>
                 <div id="EmailsGenerated"></div>
-
-
+                <br>
                 <label for="EmailSubject">Email Subject:</label>
                 <br>
                 <input type="text" id="EmailSubject" name="EmailSubject" style="width:100%;">
