@@ -234,7 +234,10 @@
                 <button id="SendAllToFlowButton" class="CustomButton">Generate All Emails In Drafts</button>
                 <br>
                 <div id="SendToFlowButtonMessage"></div>
+                <button id="StopGeneratingButton" class="CustomButton">Stop Generating</button>
                 <div id="EmailsGenerated"></div>
+
+
                 <label for="EmailSubject">Email Subject:</label>
                 <br>
                 <input type="text" id="EmailSubject" name="EmailSubject" style="width:100%;">
@@ -384,6 +387,12 @@
                         $('#SendToFlowButtonMessage').html('Sending to flow');
                         $("#EmailsGenerated").html("");
                     });
+
+                    $('#StopGeneratingButton').on('click', function() {
+                        $("#SendToFlowButtonMessage").attr("style", "color: green;");
+                        $('#SendToFlowButtonMessage').html('Stopping...');
+                    });
+                    
         
                 });
 
