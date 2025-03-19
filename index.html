@@ -12,10 +12,13 @@
 
             <script src="https://cdn.quilljs.com/2.0.0-dev.4/quill.min.js"></script>
             <style>
-                #BuilderContainer {
+                BuilderContainer {
                     padding-left: 50px;
                     padding-right: 50px;
-                    padding-top:25px;
+                    padding-top: 25px;
+                    max-width: 900px;
+                    display: block;
+                    margin: auto;
                 }
 
                 body {
@@ -24,10 +27,12 @@
                     padding: 0;
                 }
     
-                #EmailType {
-                    max-width: 200px;
-                    display: inline-block;
-                    margin-right: 6px;
+                .EmailType {
+                    /* //max-width: 200px;
+                    //display: inline-block;
+                    //margin-right: 6px; */
+                    margin-top: 3px;
+                    margin-bottom: 3px;
                 }
   
                 .editor-container {
@@ -120,6 +125,7 @@
                   border: none;
                   background-color: white;
                   color: orange;
+                  cursor: pointer;
                 }
 
                 .CustomButton{
@@ -144,6 +150,7 @@
                   border: 1px solid #ccc;
                   margin-bottom: 10px;
                   padding: 5px;
+                  margin-top: 3px;
                 }
 
                 .ql-formats {
@@ -161,6 +168,10 @@
 
                 #EmailBuilderTitle {
                     margin-left: -1px;
+                }
+
+                #toolbar{
+                    margin-top: 3px;
                 }
             </style>
         </head>
